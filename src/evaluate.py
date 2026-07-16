@@ -314,7 +314,7 @@ def main():
     print("Certifique-se de ter feito push dos prompts antes de avaliar:")
     print("  python src/push_prompts.py\n")
 
-    username = os.getenv("USERNAME_LANGSMITH_HUB", "")
+    username = os.getenv("USERNAME_LANGSMITH_HUB") or os.getenv("LANGSMITH_PROMPT_OWNER", "")
     if not username:
         print("❌ USERNAME_LANGSMITH_HUB não configurada no .env")
         print("   Configure seu username do LangSmith Hub antes de continuar.")
