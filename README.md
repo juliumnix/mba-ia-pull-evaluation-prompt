@@ -1,4 +1,4 @@
-# Pull, Otimização e Avaliação de Prompts com LangChain e LangSmith
+﻿# Pull, Otimização e Avaliação de Prompts com LangChain e LangSmith
 
 Este repositório implementa o fluxo completo do desafio: pull de um prompt ruim do LangSmith Prompt Hub, otimização local em YAML, push público da versão otimizada e avaliação com métricas customizadas.
 
@@ -72,7 +72,9 @@ Screenshots salvos em [`docs/screenshots/`](docs/screenshots/):
 3. `03-trace-precision-1.png` / `03-trace-precision-2.png` — tracing detalhado (métrica Precision)
 4. `04-trace-clarity-input.png` / `05-trace-clarity-output.png` — tracing detalhado (métrica Clarity)
 
-Opcional: print do dataset com 15 exemplos em  
+6. `06-dataset-15-exemplos.png` — dataset com 15 exemplos
+
+Dataset:  
 https://smith.langchain.com/o/83778d5a-f8b4-4c09-93d0-4cbfe72172ad/datasets/085305ac-bc6e-45a0-896a-bcd7eeab7a2e
 
 ## Como Executar
@@ -182,3 +184,4 @@ pytest tests/test_prompts.py -v
 └── tests/
     └── test_prompts.py
 ```
+
